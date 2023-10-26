@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Test task">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Test</title>
+</head>
+
+
+<body>
+	<main class="main ">
+		<div class="container">
+			<div class="choose-dob">
+				<h1 class="choose-dob__title">Виберіть дату народження</h1>
+				<form class="choose-dob__form" id="dateForm">
+					<label class="choose-dob__label">Від:
+						<input class="choose-dob__input input-from" id="dateFrom" type="date" pattern="\d{4}-\d{2}-\d{2}">
+					</label>
+					<label class="choose-dob__label"> До: 
+						<input class="choose-dob__input input-to" id="dateTo" type="date">
+					</label>
+					<button class="choose-dob__submit" id="submitBtn" type="submit">Оновити</button>
+				</form>
+			</div>
+	
+			<ul class="person-list">
+				<!-- <li class="person-list__card">
+					<h2 class="person-list__name">Rober Fox</h2>
+					<ul class="person-info">
+						<li class="person-info__item email">fox@example.com</li>
+						<li class="person-info__item phone">+9168041123773</li>
+						<li class="person-info__item dob">2005-10-23</li>
+						<li class="person-info__item male">male</li>
+						<li class="person-info__item website">velum.biz</li>
+					</ul>
+				</li>
+				<li class="person-list__card">
+					<h2 class="person-list__name">Rober Fox</h2>
+					<ul class="person-info">
+						<li class="person-info__item email">fox@example.com</li>
+						<li class="person-info__item phone">+9168041123773</li>
+						<li class="person-info__item dob">2005-10-23</li>
+						<li class="person-info__item female">male</li>
+						<li class="person-info__item website">velum.biz</li>
+					</ul>
+				</li> -->
+	
+			</ul>
+		</div>
+
+	</main>
+
+	<script src="js/libs.min.js" defer></script>
+<script src="js/main.min.js" defer></script>
+
+</body>
+
+</html>

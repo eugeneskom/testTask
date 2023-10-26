@@ -1,0 +1,151 @@
+@import "base/*.scss";
+@import "global/*.scss";
+@import "**/_*.scss";
+@import "../components/**/*.scss";
+
+.main {
+  padding: 48px 15px;
+}
+
+.choose-dob {
+  max-width: 864px;
+  margin: 0 auto;
+  &__title {
+    color: #4a4a68;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin-bottom: 16px;
+  }
+  &__form {
+    border-radius: 2px;
+    background: #edeff0;
+    padding: 32px 32px 32px 24px;
+  }
+  &__input {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+    padding: 13px 14px 14px 12px;
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__label:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &__label:last-child {
+    margin-bottom: 24px;
+  }
+
+  &__submit {
+    background-color: #0d326c;
+    padding: 13px 32px;
+    color: #fff;
+    width: 100%;
+  }
+}
+
+.person-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  gap: 24px;
+  &__card {
+    padding: 32px 24px;
+    background-color: #fff;
+    flex: 1;
+  }
+  &__name {
+    margin-bottom: 24px;
+    color: #4a4a68;
+    font-family: Merriweather, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+  }
+}
+
+.person-info {
+  &__item {
+    position: relative;
+    padding-left: 24px;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+    }
+
+    &.email::before {
+      background-image: url("../img/icons/envelope.svg");
+    }
+    &.phone::before {
+      background-image: url("../img/icons/phone-alt.svg");
+    }
+    &.dob::before {
+      background-image: url("../img/icons/birthday-cake.svg");
+    }
+    &.male::before {
+      background-image: url("../img/icons/male.svg");
+    }
+    &.female::before {
+      background-image: url("../img/icons/female.svg");
+    }
+    &.website::before {
+      background-image: url("../img/icons/Vector.svg");
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .choose-dob__title {
+    font-size: 24px;
+  }
+
+  .choose-dob__form {
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+  }
+
+  .choose-dob__label:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .choose-dob__submit {
+    margin-top: 10px;
+    max-width: 206px;
+  }
+  .choose-dob__label {
+    display: block;
+    max-width: 206px;
+    width: 100%;
+  }
+
+  .choose-dob__input {
+    padding: 11px 14px 11px 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .person-list{
+    padding-top: 46px;
+    row-gap: 46px;
+  }
+  .person-list__card {
+    flex: 0 0 calc((100% - 48px) / 3 );
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ukr",
+"title":"Test",
+"description":"Test task",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	<main class="main ">
+		<div class="container">
+			<div class="choose-dob">
+				<h1 class="choose-dob__title">Виберіть дату народження</h1>
+				<form class="choose-dob__form" id="dateForm">
+					<label class="choose-dob__label">Від:
+						<input class="choose-dob__input input-from" id="dateFrom" type="date" pattern="\d{4}-\d{2}-\d{2}">
+					</label>
+					<label class="choose-dob__label"> До: 
+						<input class="choose-dob__input input-to" id="dateTo" type="date">
+					</label>
+					<button class="choose-dob__submit" id="submitBtn" type="submit">Оновити</button>
+				</form>
+			</div>
+	
+			<ul class="person-list">
+				<!-- <li class="person-list__card">
+					<h2 class="person-list__name">Rober Fox</h2>
+					<ul class="person-info">
+						<li class="person-info__item email">fox@example.com</li>
+						<li class="person-info__item phone">+9168041123773</li>
+						<li class="person-info__item dob">2005-10-23</li>
+						<li class="person-info__item male">male</li>
+						<li class="person-info__item website">velum.biz</li>
+					</ul>
+				</li>
+				<li class="person-list__card">
+					<h2 class="person-list__name">Rober Fox</h2>
+					<ul class="person-info">
+						<li class="person-info__item email">fox@example.com</li>
+						<li class="person-info__item phone">+9168041123773</li>
+						<li class="person-info__item dob">2005-10-23</li>
+						<li class="person-info__item female">male</li>
+						<li class="person-info__item website">velum.biz</li>
+					</ul>
+				</li> -->
+	
+			</ul>
+		</div>
+
+	</main>
+
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
